@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664F21B21CCD27EF008C9A31 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664F21B11CCD27EF008C9A31 /* opencv2.framework */; };
+		66B008B71C9C3D2C007C407B /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66B008B61C9C3D2C007C407B /* UIImage+OpenCV.mm */; };
+		66B008BC1C9C3D37007C407B /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66B008B81C9C3D37007C407B /* haarcascade_frontalface_alt_tree.xml */; };
+		66B008BD1C9C3D37007C407B /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66B008B91C9C3D37007C407B /* haarcascade_frontalface_alt.xml */; };
+		66B008BE1C9C3D37007C407B /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66B008BA1C9C3D37007C407B /* haarcascade_frontalface_alt2.xml */; };
+		66B008BF1C9C3D37007C407B /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 66B008BB1C9C3D37007C407B /* haarcascade_frontalface_default.xml */; };
+		66B40BC81C10338900FF192A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B40BC31C10338900FF192A /* Accelerate.framework */; };
+		66B40BC91C10338900FF192A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B40BC41C10338900FF192A /* AssetsLibrary.framework */; };
+		66B40BCA1C10338900FF192A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B40BC51C10338900FF192A /* AVFoundation.framework */; };
+		66B40BCB1C10338900FF192A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B40BC61C10338900FF192A /* CoreImage.framework */; };
+		66B40BCC1C10338900FF192A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B40BC71C10338900FF192A /* CoreMedia.framework */; };
+		66CBA2801C0608E7009F4B3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA27F1C0608E7009F4B3E /* main.m */; };
+		66CBA2831C0608E7009F4B3E /* VJAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA2821C0608E7009F4B3E /* VJAppDelegate.mm */; };
+		66CBA2861C0608E7009F4B3E /* VJTestViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA2851C0608E7009F4B3E /* VJTestViewController.mm */; };
+		66CBA2891C0608E7009F4B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CBA2871C0608E7009F4B3E /* Main.storyboard */; };
+		66CBA28B1C0608E7009F4B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CBA28A1C0608E7009F4B3E /* Assets.xcassets */; };
+		66CBA28E1C0608E7009F4B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CBA28C1C0608E7009F4B3E /* LaunchScreen.storyboard */; };
+		66CBA2991C0608E7009F4B3E /* Viola_JonesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA2981C0608E7009F4B3E /* Viola_JonesTests.m */; };
+		66CBA2A41C0608E7009F4B3E /* Viola_JonesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA2A31C0608E7009F4B3E /* Viola_JonesUITests.m */; };
+		66CBA2C01C060CFD009F4B3E /* VJImageProcessingModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66CBA2BF1C060CFD009F4B3E /* VJImageProcessingModule.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66CBA2951C0608E7009F4B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CBA2731C0608E6009F4B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CBA27A1C0608E7009F4B3E;
+			remoteInfo = "Viola-Jones";
+		};
+		66CBA2A01C0608E7009F4B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66CBA2731C0608E6009F4B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66CBA27A1C0608E7009F4B3E;
+			remoteInfo = "Viola-Jones";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		664F21B11CCD27EF008C9A31 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../opencv2.framework; sourceTree = "<group>"; };
+		66B008B51C9C3D2C007C407B /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		66B008B61C9C3D2C007C407B /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		66B008B81C9C3D37007C407B /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		66B008B91C9C3D37007C407B /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		66B008BA1C9C3D37007C407B /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		66B008BB1C9C3D37007C407B /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		66B40BC31C10338900FF192A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		66B40BC41C10338900FF192A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		66B40BC51C10338900FF192A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66B40BC61C10338900FF192A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		66B40BC71C10338900FF192A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		66CBA27B1C0608E7009F4B3E /* Viola-Jones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viola-Jones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CBA27F1C0608E7009F4B3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66CBA2811C0608E7009F4B3E /* VJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VJAppDelegate.h; sourceTree = "<group>"; };
+		66CBA2821C0608E7009F4B3E /* VJAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VJAppDelegate.mm; sourceTree = "<group>"; };
+		66CBA2841C0608E7009F4B3E /* VJTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VJTestViewController.h; sourceTree = "<group>"; };
+		66CBA2851C0608E7009F4B3E /* VJTestViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VJTestViewController.mm; sourceTree = "<group>"; };
+		66CBA2881C0608E7009F4B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66CBA28A1C0608E7009F4B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66CBA28D1C0608E7009F4B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66CBA28F1C0608E7009F4B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CBA2941C0608E7009F4B3E /* Viola-Jones.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viola-Jones.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CBA2981C0608E7009F4B3E /* Viola_JonesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Viola_JonesTests.m; sourceTree = "<group>"; };
+		66CBA29A1C0608E7009F4B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CBA29F1C0608E7009F4B3E /* Viola-Jones.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viola-Jones.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CBA2A31C0608E7009F4B3E /* Viola_JonesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Viola_JonesUITests.m; sourceTree = "<group>"; };
+		66CBA2A51C0608E7009F4B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CBA2B81C060AE4009F4B3E /* VJ-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VJ-PrefixHeader.pch"; sourceTree = "<group>"; };
+		66CBA2BE1C060CFD009F4B3E /* VJImageProcessingModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VJImageProcessingModule.h; sourceTree = "<group>"; };
+		66CBA2BF1C060CFD009F4B3E /* VJImageProcessingModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VJImageProcessingModule.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66CBA2781C0608E7009F4B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664F21B21CCD27EF008C9A31 /* opencv2.framework in Frameworks */,
+				66B40BC81C10338900FF192A /* Accelerate.framework in Frameworks */,
+				66B40BC91C10338900FF192A /* AssetsLibrary.framework in Frameworks */,
+				66B40BCA1C10338900FF192A /* AVFoundation.framework in Frameworks */,
+				66B40BCB1C10338900FF192A /* CoreImage.framework in Frameworks */,
+				66B40BCC1C10338900FF192A /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA2911C0608E7009F4B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA29C1C0608E7009F4B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66CBA2721C0608E6009F4B3E = {
+			isa = PBXGroup;
+			children = (
+				66B40BC31C10338900FF192A /* Accelerate.framework */,
+				66B40BC41C10338900FF192A /* AssetsLibrary.framework */,
+				66B40BC51C10338900FF192A /* AVFoundation.framework */,
+				66B40BC61C10338900FF192A /* CoreImage.framework */,
+				66B40BC71C10338900FF192A /* CoreMedia.framework */,
+				66CBA27D1C0608E7009F4B3E /* Viola-Jones */,
+				66CBA2971C0608E7009F4B3E /* Viola-JonesTests */,
+				66CBA2A21C0608E7009F4B3E /* Viola-JonesUITests */,
+				66CBA27C1C0608E7009F4B3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66CBA27C1C0608E7009F4B3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66CBA27B1C0608E7009F4B3E /* Viola-Jones.app */,
+				66CBA2941C0608E7009F4B3E /* Viola-Jones.xctest */,
+				66CBA29F1C0608E7009F4B3E /* Viola-Jones.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66CBA27D1C0608E7009F4B3E /* Viola-Jones */ = {
+			isa = PBXGroup;
+			children = (
+				66CBA2811C0608E7009F4B3E /* VJAppDelegate.h */,
+				66CBA2821C0608E7009F4B3E /* VJAppDelegate.mm */,
+				66CBA2841C0608E7009F4B3E /* VJTestViewController.h */,
+				66CBA2851C0608E7009F4B3E /* VJTestViewController.mm */,
+				66CBA2BE1C060CFD009F4B3E /* VJImageProcessingModule.h */,
+				66CBA2BF1C060CFD009F4B3E /* VJImageProcessingModule.mm */,
+				66B008B51C9C3D2C007C407B /* UIImage+OpenCV.h */,
+				66B008B61C9C3D2C007C407B /* UIImage+OpenCV.mm */,
+				664F21B11CCD27EF008C9A31 /* opencv2.framework */,
+				66B008B81C9C3D37007C407B /* haarcascade_frontalface_alt_tree.xml */,
+				66B008B91C9C3D37007C407B /* haarcascade_frontalface_alt.xml */,
+				66B008BA1C9C3D37007C407B /* haarcascade_frontalface_alt2.xml */,
+				66B008BB1C9C3D37007C407B /* haarcascade_frontalface_default.xml */,
+				66CBA2871C0608E7009F4B3E /* Main.storyboard */,
+				66CBA28A1C0608E7009F4B3E /* Assets.xcassets */,
+				66CBA28C1C0608E7009F4B3E /* LaunchScreen.storyboard */,
+				66CBA28F1C0608E7009F4B3E /* Info.plist */,
+				66CBA27E1C0608E7009F4B3E /* Supporting Files */,
+				66CBA2B81C060AE4009F4B3E /* VJ-PrefixHeader.pch */,
+			);
+			path = "Viola-Jones";
+			sourceTree = "<group>";
+		};
+		66CBA27E1C0608E7009F4B3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66CBA27F1C0608E7009F4B3E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66CBA2971C0608E7009F4B3E /* Viola-JonesTests */ = {
+			isa = PBXGroup;
+			children = (
+				66CBA2981C0608E7009F4B3E /* Viola_JonesTests.m */,
+				66CBA29A1C0608E7009F4B3E /* Info.plist */,
+			);
+			path = "Viola-JonesTests";
+			sourceTree = "<group>";
+		};
+		66CBA2A21C0608E7009F4B3E /* Viola-JonesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66CBA2A31C0608E7009F4B3E /* Viola_JonesUITests.m */,
+				66CBA2A51C0608E7009F4B3E /* Info.plist */,
+			);
+			path = "Viola-JonesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66CBA27A1C0608E7009F4B3E /* Viola-Jones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CBA2A81C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-Jones" */;
+			buildPhases = (
+				66CBA2771C0608E7009F4B3E /* Sources */,
+				66CBA2781C0608E7009F4B3E /* Frameworks */,
+				66CBA2791C0608E7009F4B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viola-Jones";
+			productName = "Viola-Jones";
+			productReference = 66CBA27B1C0608E7009F4B3E /* Viola-Jones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66CBA2931C0608E7009F4B3E /* Viola-JonesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CBA2AB1C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-JonesTests" */;
+			buildPhases = (
+				66CBA2901C0608E7009F4B3E /* Sources */,
+				66CBA2911C0608E7009F4B3E /* Frameworks */,
+				66CBA2921C0608E7009F4B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CBA2961C0608E7009F4B3E /* PBXTargetDependency */,
+			);
+			name = "Viola-JonesTests";
+			productName = "Viola-JonesTests";
+			productReference = 66CBA2941C0608E7009F4B3E /* Viola-Jones.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66CBA29E1C0608E7009F4B3E /* Viola-JonesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66CBA2AE1C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-JonesUITests" */;
+			buildPhases = (
+				66CBA29B1C0608E7009F4B3E /* Sources */,
+				66CBA29C1C0608E7009F4B3E /* Frameworks */,
+				66CBA29D1C0608E7009F4B3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66CBA2A11C0608E7009F4B3E /* PBXTargetDependency */,
+			);
+			name = "Viola-JonesUITests";
+			productName = "Viola-JonesUITests";
+			productReference = 66CBA29F1C0608E7009F4B3E /* Viola-Jones.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66CBA2731C0608E6009F4B3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = RandomDudes;
+				TargetAttributes = {
+					66CBA27A1C0608E7009F4B3E = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = GGAXD5EY64;
+					};
+					66CBA2931C0608E7009F4B3E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 66CBA27A1C0608E7009F4B3E;
+					};
+					66CBA29E1C0608E7009F4B3E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 66CBA27A1C0608E7009F4B3E;
+					};
+				};
+			};
+			buildConfigurationList = 66CBA2761C0608E6009F4B3E /* Build configuration list for PBXProject "Viola-Jones" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66CBA2721C0608E6009F4B3E;
+			productRefGroup = 66CBA27C1C0608E7009F4B3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66CBA27A1C0608E7009F4B3E /* Viola-Jones */,
+				66CBA2931C0608E7009F4B3E /* Viola-JonesTests */,
+				66CBA29E1C0608E7009F4B3E /* Viola-JonesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66CBA2791C0608E7009F4B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CBA28E1C0608E7009F4B3E /* LaunchScreen.storyboard in Resources */,
+				66B008BE1C9C3D37007C407B /* haarcascade_frontalface_alt2.xml in Resources */,
+				66B008BF1C9C3D37007C407B /* haarcascade_frontalface_default.xml in Resources */,
+				66CBA28B1C0608E7009F4B3E /* Assets.xcassets in Resources */,
+				66CBA2891C0608E7009F4B3E /* Main.storyboard in Resources */,
+				66B008BC1C9C3D37007C407B /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				66B008BD1C9C3D37007C407B /* haarcascade_frontalface_alt.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA2921C0608E7009F4B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA29D1C0608E7009F4B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66CBA2771C0608E7009F4B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CBA2861C0608E7009F4B3E /* VJTestViewController.mm in Sources */,
+				66CBA2831C0608E7009F4B3E /* VJAppDelegate.mm in Sources */,
+				66CBA2801C0608E7009F4B3E /* main.m in Sources */,
+				66CBA2C01C060CFD009F4B3E /* VJImageProcessingModule.mm in Sources */,
+				66B008B71C9C3D2C007C407B /* UIImage+OpenCV.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA2901C0608E7009F4B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CBA2991C0608E7009F4B3E /* Viola_JonesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CBA29B1C0608E7009F4B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66CBA2A41C0608E7009F4B3E /* Viola_JonesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66CBA2961C0608E7009F4B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CBA27A1C0608E7009F4B3E /* Viola-Jones */;
+			targetProxy = 66CBA2951C0608E7009F4B3E /* PBXContainerItemProxy */;
+		};
+		66CBA2A11C0608E7009F4B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66CBA27A1C0608E7009F4B3E /* Viola-Jones */;
+			targetProxy = 66CBA2A01C0608E7009F4B3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66CBA2871C0608E7009F4B3E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CBA2881C0608E7009F4B3E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66CBA28C1C0608E7009F4B3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CBA28D1C0608E7009F4B3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66CBA2A61C0608E7009F4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66CBA2A71C0608E7009F4B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66CBA2A91C0608E7009F4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Viola-Jones",
+					"$(PROJECT_DIR)/../",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Viola-Jones/VJ-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../";
+				INFOPLIST_FILE = "Viola-Jones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-Jones-Backproject";
+				PRODUCT_NAME = "Viola-Jones";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		66CBA2AA1C0608E7009F4B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Viola-Jones",
+					"$(PROJECT_DIR)/../",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Viola-Jones/VJ-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../";
+				INFOPLIST_FILE = "Viola-Jones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-Jones-Backproject";
+				PRODUCT_NAME = "Viola-Jones";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		66CBA2AC1C0608E7009F4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Viola-JonesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-JonesTests";
+				PRODUCT_NAME = "Viola-Jones";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viola-Jones.app/Viola-Jones";
+			};
+			name = Debug;
+		};
+		66CBA2AD1C0608E7009F4B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Viola-JonesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-JonesTests";
+				PRODUCT_NAME = "Viola-Jones";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viola-Jones.app/Viola-Jones";
+			};
+			name = Release;
+		};
+		66CBA2AF1C0608E7009F4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Viola-JonesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-JonesUITests";
+				PRODUCT_NAME = "Viola-Jones";
+				TEST_TARGET_NAME = "Viola-Jones";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		66CBA2B01C0608E7009F4B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Viola-JonesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.randomdudes.Viola-JonesUITests";
+				PRODUCT_NAME = "Viola-Jones";
+				TEST_TARGET_NAME = "Viola-Jones";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66CBA2761C0608E6009F4B3E /* Build configuration list for PBXProject "Viola-Jones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CBA2A61C0608E7009F4B3E /* Debug */,
+				66CBA2A71C0608E7009F4B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CBA2A81C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-Jones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CBA2A91C0608E7009F4B3E /* Debug */,
+				66CBA2AA1C0608E7009F4B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CBA2AB1C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-JonesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CBA2AC1C0608E7009F4B3E /* Debug */,
+				66CBA2AD1C0608E7009F4B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66CBA2AE1C0608E7009F4B3E /* Build configuration list for PBXNativeTarget "Viola-JonesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66CBA2AF1C0608E7009F4B3E /* Debug */,
+				66CBA2B01C0608E7009F4B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66CBA2731C0608E6009F4B3E /* Project object */;
+}

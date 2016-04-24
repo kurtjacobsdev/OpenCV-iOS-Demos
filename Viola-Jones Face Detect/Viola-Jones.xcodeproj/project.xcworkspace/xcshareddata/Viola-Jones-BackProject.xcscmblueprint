@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "083EA6907910FB831C0D627CEF3535ED48BBC070",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "083EA6907910FB831C0D627CEF3535ED48BBC070" : 0,
+    "30432C914BAFAB6E6DAC916AD3D5420A5230A0CC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D4B1B7AF-6D1B-45E6-A62A-DE951639D3DE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "083EA6907910FB831C0D627CEF3535ED48BBC070" : "OpenCV-iOS-Demos\/",
+    "30432C914BAFAB6E6DAC916AD3D5420A5230A0CC" : "HandTracker\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Viola-Jones-BackProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Viola-Jones+BackProject\/Viola-Jones-BackProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kurtjacobs\/opencv_ios_demos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "083EA6907910FB831C0D627CEF3535ED48BBC070"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/kurtjacobs\/handtracker-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30432C914BAFAB6E6DAC916AD3D5420A5230A0CC"
+    }
+  ]
+}
